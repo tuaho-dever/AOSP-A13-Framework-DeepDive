@@ -7,6 +7,11 @@ build/
 .gradle/
 .idea/
 captures/
+# 拦截 AOSP/Android 编译及索引产生的巨型文件
+.repo/
+*.swp
+*.patch
+/prebuilts/
 
 # --- Python & NLP Environment ---
 __pycache__/
@@ -21,4 +26,12 @@ venv/
 *.txt
 *.raw
 *.log
+# Excluding pic  彻底拦截所有图片隐私
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.tiff
 traces.txt
+/novel_data/
+chapters_summary/
