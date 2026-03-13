@@ -1,0 +1,24 @@
+# --- Android & AOSP Build Outputs ---
+*.so
+*.o
+*.bin
+out/
+build/
+.gradle/
+.idea/
+captures/
+
+# --- Python & NLP Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.pytest_cache/
+
+# --- Privacy & Large Data ---
+# Excluding raw novel text and heavy system traces
+*.txt
+*.raw
+*.log
+traces.txt
